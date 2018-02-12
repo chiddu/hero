@@ -1,7 +1,7 @@
-<h2>All my heroes Details</h2>
+<h2>The selected hero is {{ selectedHero.name }} </h2>
 
 <ul class="heroes">
-	<li *ngFor="let hero of heroes"> {{hero.name}} </li>
+	<li *ngFor="let hero of heroes" (click)="onSelect(hero)"> {{ hero.name }} </li>
 </ul>
 
 
